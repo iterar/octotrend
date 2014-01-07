@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD00C65C185DD04F002D25CB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD00C65B185DD04F002D25CB /* Cocoa.framework */; };
+		DD00C666185DD04F002D25CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD00C664185DD04F002D25CB /* InfoPlist.strings */; };
+		DD00C668185DD04F002D25CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD00C667185DD04F002D25CB /* main.m */; };
+		DD00C66C185DD04F002D25CB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DD00C66A185DD04F002D25CB /* Credits.rtf */; };
+		DD00C66F185DD04F002D25CB /* ITAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD00C66E185DD04F002D25CB /* ITAppDelegate.m */; };
+		DD00C672185DD04F002D25CB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD00C670185DD04F002D25CB /* MainMenu.xib */; };
+		DD00C675185DD04F002D25CB /* Octotrend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD00C673185DD04F002D25CB /* Octotrend.xcdatamodeld */; };
+		DD00C677185DD04F002D25CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD00C676185DD04F002D25CB /* Images.xcassets */; };
+		DD00C67E185DD04F002D25CB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD00C67D185DD04F002D25CB /* XCTest.framework */; };
+		DD00C67F185DD04F002D25CB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD00C65B185DD04F002D25CB /* Cocoa.framework */; };
+		DD00C687185DD04F002D25CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD00C685185DD04F002D25CB /* InfoPlist.strings */; };
+		DD00C689185DD04F002D25CB /* OctotrendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD00C688185DD04F002D25CB /* OctotrendTests.m */; };
+		DD00C695185DD297002D25CB /* ITMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD00C693185DD297002D25CB /* ITMasterViewController.m */; };
+		DD00C696185DD297002D25CB /* ITMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD00C694185DD297002D25CB /* ITMasterViewController.xib */; };
+		DD89A49F186DE00600543D8C /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89A49E186DE00600543D8C /* Repository.m */; };
+		DD89A4D1186E099600543D8C /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89A4BF186E099600543D8C /* AFHTTPRequestOperation.m */; };
+		DD89A4D2186E099600543D8C /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89A4C1186E099600543D8C /* AFHTTPRequestOperationManager.m */; };
+		DD89A4D3186E099600543D8C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89A4C3186E099600543D8C /* AFHTTPSessionManager.m */; };
+		DD89A4D4186E099600543D8C /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89A4C6186E099600543D8C /* AFNetworkReachabilityManager.m */; };
+		DD89A4D5186E099600543D8C /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89A4C8186E099600543D8C /* AFSecurityPolicy.m */; };
+		DD89A4D6186E099600543D8C /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89A4CA186E099600543D8C /* AFURLConnectionOperation.m */; };
+		DD89A4D7186E099600543D8C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89A4CC186E099600543D8C /* AFURLRequestSerialization.m */; };
+		DD89A4D8186E099600543D8C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89A4CE186E099600543D8C /* AFURLResponseSerialization.m */; };
+		DD89A4D9186E099600543D8C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD89A4D0186E099600543D8C /* AFURLSessionManager.m */; };
+		DD89A4DB186E0A3700543D8C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD89A4DA186E0A3700543D8C /* CoreServices.framework */; };
+		DD89A4DD186E0A4700543D8C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD89A4DC186E0A4700543D8C /* SystemConfiguration.framework */; };
+		DD89A4DF186E0A5700543D8C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD89A4DE186E0A5700543D8C /* Security.framework */; };
+		DDCB617A187C5B2100800E6C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDCB6179187C5B2100800E6C /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD00C680185DD04F002D25CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD00C650185DD04F002D25CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD00C657185DD04F002D25CB;
+			remoteInfo = Octotrend;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD00C658185DD04F002D25CB /* Octotrend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octotrend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD00C65B185DD04F002D25CB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DD00C65E185DD04F002D25CB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DD00C65F185DD04F002D25CB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DD00C660185DD04F002D25CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD00C663185DD04F002D25CB /* Octotrend-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Octotrend-Info.plist"; sourceTree = "<group>"; };
+		DD00C665185DD04F002D25CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD00C667185DD04F002D25CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD00C669185DD04F002D25CB /* Octotrend-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Octotrend-Prefix.pch"; sourceTree = "<group>"; };
+		DD00C66B185DD04F002D25CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DD00C66D185DD04F002D25CB /* ITAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITAppDelegate.h; sourceTree = "<group>"; };
+		DD00C66E185DD04F002D25CB /* ITAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITAppDelegate.m; sourceTree = "<group>"; };
+		DD00C671185DD04F002D25CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DD00C674185DD04F002D25CB /* Octotrend.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Octotrend.xcdatamodel; sourceTree = "<group>"; };
+		DD00C676185DD04F002D25CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DD00C67C185DD04F002D25CB /* OctotrendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctotrendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD00C67D185DD04F002D25CB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DD00C684185DD04F002D25CB /* OctotrendTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OctotrendTests-Info.plist"; sourceTree = "<group>"; };
+		DD00C686185DD04F002D25CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD00C688185DD04F002D25CB /* OctotrendTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OctotrendTests.m; sourceTree = "<group>"; };
+		DD00C692185DD297002D25CB /* ITMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITMasterViewController.h; sourceTree = "<group>"; };
+		DD00C693185DD297002D25CB /* ITMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITMasterViewController.m; sourceTree = "<group>"; };
+		DD00C694185DD297002D25CB /* ITMasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ITMasterViewController.xib; sourceTree = "<group>"; };
+		DD89A49D186DE00600543D8C /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		DD89A49E186DE00600543D8C /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
+		DD89A4BE186E099600543D8C /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		DD89A4BF186E099600543D8C /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		DD89A4C0186E099600543D8C /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		DD89A4C1186E099600543D8C /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		DD89A4C2186E099600543D8C /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		DD89A4C3186E099600543D8C /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		DD89A4C4186E099600543D8C /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		DD89A4C5186E099600543D8C /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		DD89A4C6186E099600543D8C /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		DD89A4C7186E099600543D8C /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		DD89A4C8186E099600543D8C /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		DD89A4C9186E099600543D8C /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		DD89A4CA186E099600543D8C /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		DD89A4CB186E099600543D8C /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		DD89A4CC186E099600543D8C /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		DD89A4CD186E099600543D8C /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		DD89A4CE186E099600543D8C /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		DD89A4CF186E099600543D8C /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		DD89A4D0186E099600543D8C /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		DD89A4DA186E0A3700543D8C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		DD89A4DC186E0A4700543D8C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DD89A4DE186E0A5700543D8C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DDCB6179187C5B2100800E6C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD00C655185DD04F002D25CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCB617A187C5B2100800E6C /* WebKit.framework in Frameworks */,
+				DD89A4DF186E0A5700543D8C /* Security.framework in Frameworks */,
+				DD89A4DD186E0A4700543D8C /* SystemConfiguration.framework in Frameworks */,
+				DD89A4DB186E0A3700543D8C /* CoreServices.framework in Frameworks */,
+				DD00C65C185DD04F002D25CB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD00C679185DD04F002D25CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD00C67F185DD04F002D25CB /* Cocoa.framework in Frameworks */,
+				DD00C67E185DD04F002D25CB /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD00C64F185DD04F002D25CB = {
+			isa = PBXGroup;
+			children = (
+				DD00C661185DD04F002D25CB /* Octotrend */,
+				DD00C682185DD04F002D25CB /* OctotrendTests */,
+				DD00C65A185DD04F002D25CB /* Frameworks */,
+				DD00C659185DD04F002D25CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD00C659185DD04F002D25CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD00C658185DD04F002D25CB /* Octotrend.app */,
+				DD00C67C185DD04F002D25CB /* OctotrendTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD00C65A185DD04F002D25CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDCB6179187C5B2100800E6C /* WebKit.framework */,
+				DD89A4DE186E0A5700543D8C /* Security.framework */,
+				DD89A4DC186E0A4700543D8C /* SystemConfiguration.framework */,
+				DD89A4DA186E0A3700543D8C /* CoreServices.framework */,
+				DD00C65B185DD04F002D25CB /* Cocoa.framework */,
+				DD00C67D185DD04F002D25CB /* XCTest.framework */,
+				DD00C65D185DD04F002D25CB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD00C65D185DD04F002D25CB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD00C65E185DD04F002D25CB /* AppKit.framework */,
+				DD00C65F185DD04F002D25CB /* CoreData.framework */,
+				DD00C660185DD04F002D25CB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DD00C661185DD04F002D25CB /* Octotrend */ = {
+			isa = PBXGroup;
+			children = (
+				DD89A4BD186E099600543D8C /* AFNetworking */,
+				DD89A49C186DB3C500543D8C /* Models */,
+				DD89A49B186DB3B900543D8C /* GUI */,
+				DD00C676185DD04F002D25CB /* Images.xcassets */,
+				DD00C673185DD04F002D25CB /* Octotrend.xcdatamodeld */,
+				DD00C662185DD04F002D25CB /* Supporting Files */,
+			);
+			path = Octotrend;
+			sourceTree = "<group>";
+		};
+		DD00C662185DD04F002D25CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD00C663185DD04F002D25CB /* Octotrend-Info.plist */,
+				DD00C664185DD04F002D25CB /* InfoPlist.strings */,
+				DD00C667185DD04F002D25CB /* main.m */,
+				DD00C669185DD04F002D25CB /* Octotrend-Prefix.pch */,
+				DD00C66A185DD04F002D25CB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD00C682185DD04F002D25CB /* OctotrendTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD00C688185DD04F002D25CB /* OctotrendTests.m */,
+				DD00C683185DD04F002D25CB /* Supporting Files */,
+			);
+			path = OctotrendTests;
+			sourceTree = "<group>";
+		};
+		DD00C683185DD04F002D25CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD00C684185DD04F002D25CB /* OctotrendTests-Info.plist */,
+				DD00C685185DD04F002D25CB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD89A49B186DB3B900543D8C /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				DD00C66D185DD04F002D25CB /* ITAppDelegate.h */,
+				DD00C66E185DD04F002D25CB /* ITAppDelegate.m */,
+				DD00C670185DD04F002D25CB /* MainMenu.xib */,
+				DD00C692185DD297002D25CB /* ITMasterViewController.h */,
+				DD00C693185DD297002D25CB /* ITMasterViewController.m */,
+				DD00C694185DD297002D25CB /* ITMasterViewController.xib */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		DD89A49C186DB3C500543D8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD89A49D186DE00600543D8C /* Repository.h */,
+				DD89A49E186DE00600543D8C /* Repository.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DD89A4BD186E099600543D8C /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DD89A4BE186E099600543D8C /* AFHTTPRequestOperation.h */,
+				DD89A4BF186E099600543D8C /* AFHTTPRequestOperation.m */,
+				DD89A4C0186E099600543D8C /* AFHTTPRequestOperationManager.h */,
+				DD89A4C1186E099600543D8C /* AFHTTPRequestOperationManager.m */,
+				DD89A4C2186E099600543D8C /* AFHTTPSessionManager.h */,
+				DD89A4C3186E099600543D8C /* AFHTTPSessionManager.m */,
+				DD89A4C4186E099600543D8C /* AFNetworking.h */,
+				DD89A4C5186E099600543D8C /* AFNetworkReachabilityManager.h */,
+				DD89A4C6186E099600543D8C /* AFNetworkReachabilityManager.m */,
+				DD89A4C7186E099600543D8C /* AFSecurityPolicy.h */,
+				DD89A4C8186E099600543D8C /* AFSecurityPolicy.m */,
+				DD89A4C9186E099600543D8C /* AFURLConnectionOperation.h */,
+				DD89A4CA186E099600543D8C /* AFURLConnectionOperation.m */,
+				DD89A4CB186E099600543D8C /* AFURLRequestSerialization.h */,
+				DD89A4CC186E099600543D8C /* AFURLRequestSerialization.m */,
+				DD89A4CD186E099600543D8C /* AFURLResponseSerialization.h */,
+				DD89A4CE186E099600543D8C /* AFURLResponseSerialization.m */,
+				DD89A4CF186E099600543D8C /* AFURLSessionManager.h */,
+				DD89A4D0186E099600543D8C /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD00C657185DD04F002D25CB /* Octotrend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD00C68C185DD04F002D25CB /* Build configuration list for PBXNativeTarget "Octotrend" */;
+			buildPhases = (
+				DD00C654185DD04F002D25CB /* Sources */,
+				DD00C655185DD04F002D25CB /* Frameworks */,
+				DD00C656185DD04F002D25CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Octotrend;
+			productName = Octotrend;
+			productReference = DD00C658185DD04F002D25CB /* Octotrend.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD00C67B185DD04F002D25CB /* OctotrendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD00C68F185DD04F002D25CB /* Build configuration list for PBXNativeTarget "OctotrendTests" */;
+			buildPhases = (
+				DD00C678185DD04F002D25CB /* Sources */,
+				DD00C679185DD04F002D25CB /* Frameworks */,
+				DD00C67A185DD04F002D25CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD00C681185DD04F002D25CB /* PBXTargetDependency */,
+			);
+			name = OctotrendTests;
+			productName = OctotrendTests;
+			productReference = DD00C67C185DD04F002D25CB /* OctotrendTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD00C650185DD04F002D25CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Iterar;
+				TargetAttributes = {
+					DD00C67B185DD04F002D25CB = {
+						TestTargetID = DD00C657185DD04F002D25CB;
+					};
+				};
+			};
+			buildConfigurationList = DD00C653185DD04F002D25CB /* Build configuration list for PBXProject "Octotrend" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD00C64F185DD04F002D25CB;
+			productRefGroup = DD00C659185DD04F002D25CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD00C657185DD04F002D25CB /* Octotrend */,
+				DD00C67B185DD04F002D25CB /* OctotrendTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD00C656185DD04F002D25CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD00C696185DD297002D25CB /* ITMasterViewController.xib in Resources */,
+				DD00C666185DD04F002D25CB /* InfoPlist.strings in Resources */,
+				DD00C677185DD04F002D25CB /* Images.xcassets in Resources */,
+				DD00C66C185DD04F002D25CB /* Credits.rtf in Resources */,
+				DD00C672185DD04F002D25CB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD00C67A185DD04F002D25CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD00C687185DD04F002D25CB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD00C654185DD04F002D25CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD89A4D6186E099600543D8C /* AFURLConnectionOperation.m in Sources */,
+				DD89A4D1186E099600543D8C /* AFHTTPRequestOperation.m in Sources */,
+				DD89A4D4186E099600543D8C /* AFNetworkReachabilityManager.m in Sources */,
+				DD89A4D9186E099600543D8C /* AFURLSessionManager.m in Sources */,
+				DD89A4D7186E099600543D8C /* AFURLRequestSerialization.m in Sources */,
+				DD00C675185DD04F002D25CB /* Octotrend.xcdatamodeld in Sources */,
+				DD89A4D8186E099600543D8C /* AFURLResponseSerialization.m in Sources */,
+				DD89A49F186DE00600543D8C /* Repository.m in Sources */,
+				DD00C668185DD04F002D25CB /* main.m in Sources */,
+				DD89A4D2186E099600543D8C /* AFHTTPRequestOperationManager.m in Sources */,
+				DD89A4D5186E099600543D8C /* AFSecurityPolicy.m in Sources */,
+				DD00C66F185DD04F002D25CB /* ITAppDelegate.m in Sources */,
+				DD00C695185DD297002D25CB /* ITMasterViewController.m in Sources */,
+				DD89A4D3186E099600543D8C /* AFHTTPSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD00C678185DD04F002D25CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD00C689185DD04F002D25CB /* OctotrendTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD00C681185DD04F002D25CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD00C657185DD04F002D25CB /* Octotrend */;
+			targetProxy = DD00C680185DD04F002D25CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD00C664185DD04F002D25CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD00C665185DD04F002D25CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD00C66A185DD04F002D25CB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD00C66B185DD04F002D25CB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DD00C670185DD04F002D25CB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD00C671185DD04F002D25CB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		DD00C685185DD04F002D25CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD00C686185DD04F002D25CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD00C68A185DD04F002D25CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DD00C68B185DD04F002D25CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DD00C68D185DD04F002D25CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Octotrend/Octotrend-Prefix.pch";
+				INFOPLIST_FILE = "Octotrend/Octotrend-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD00C68E185DD04F002D25CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Octotrend/Octotrend-Prefix.pch";
+				INFOPLIST_FILE = "Octotrend/Octotrend-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DD00C690185DD04F002D25CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Octotrend.app/Contents/MacOS/Octotrend";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Octotrend/Octotrend-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OctotrendTests/OctotrendTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DD00C691185DD04F002D25CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Octotrend.app/Contents/MacOS/Octotrend";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Octotrend/Octotrend-Prefix.pch";
+				INFOPLIST_FILE = "OctotrendTests/OctotrendTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD00C653185DD04F002D25CB /* Build configuration list for PBXProject "Octotrend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD00C68A185DD04F002D25CB /* Debug */,
+				DD00C68B185DD04F002D25CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD00C68C185DD04F002D25CB /* Build configuration list for PBXNativeTarget "Octotrend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD00C68D185DD04F002D25CB /* Debug */,
+				DD00C68E185DD04F002D25CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD00C68F185DD04F002D25CB /* Build configuration list for PBXNativeTarget "OctotrendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD00C690185DD04F002D25CB /* Debug */,
+				DD00C691185DD04F002D25CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD00C673185DD04F002D25CB /* Octotrend.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD00C674185DD04F002D25CB /* Octotrend.xcdatamodel */,
+			);
+			currentVersion = DD00C674185DD04F002D25CB /* Octotrend.xcdatamodel */;
+			path = Octotrend.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DD00C650185DD04F002D25CB /* Project object */;
+}
