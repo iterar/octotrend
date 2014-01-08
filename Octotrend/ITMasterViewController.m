@@ -9,6 +9,8 @@
 #import "ITMasterViewController.h"
 #import "Repository.h"
 
+#import "ITRepoCellView.h"
+
 @interface ITMasterViewController ()
 
 @end
@@ -25,18 +27,21 @@
 }
 
 -(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row {
-    return 32;
+    return 70;
 }
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     
     // Get a new ViewCell
-    NSTableCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
+    ITRepoCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
     
     if( [tableColumn.identifier isEqualToString:@"RepoColumn"] )
     {
         Repository *repo = [self.repositories objectAtIndex:row];
-        cellView.textField.stringValue = repo.name;
+        cellView.nameLabel.stringValue = repo.name;
+        cellView.descriptionLabel.stringValue = repo.description;
+        cellView.languageLabel.stringValue = repo.language;
+        cellView.watchersCountLabel.stringValue = [NSString stringWithFormat:@"Watchers: %@", [repo.watchersCount stringValue]];
         return cellView;
     }
     return cellView;

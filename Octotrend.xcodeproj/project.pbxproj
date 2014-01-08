@@ -34,6 +34,7 @@
 		DD89A4DB186E0A3700543D8C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD89A4DA186E0A3700543D8C /* CoreServices.framework */; };
 		DD89A4DD186E0A4700543D8C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD89A4DC186E0A4700543D8C /* SystemConfiguration.framework */; };
 		DD89A4DF186E0A5700543D8C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD89A4DE186E0A5700543D8C /* Security.framework */; };
+		DDC89033187DBB810019676B /* ITRepoCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC89032187DBB810019676B /* ITRepoCellView.m */; };
 		DDCB617A187C5B2100800E6C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDCB6179187C5B2100800E6C /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,8 @@
 		DD89A4DA186E0A3700543D8C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		DD89A4DC186E0A4700543D8C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DD89A4DE186E0A5700543D8C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DDC89031187DBB810019676B /* ITRepoCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITRepoCellView.h; sourceTree = "<group>"; };
+		DDC89032187DBB810019676B /* ITRepoCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITRepoCellView.m; sourceTree = "<group>"; };
 		DDCB6179187C5B2100800E6C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -218,6 +221,8 @@
 				DD00C692185DD297002D25CB /* ITMasterViewController.h */,
 				DD00C693185DD297002D25CB /* ITMasterViewController.m */,
 				DD00C694185DD297002D25CB /* ITMasterViewController.xib */,
+				DDC89031187DBB810019676B /* ITRepoCellView.h */,
+				DDC89032187DBB810019676B /* ITRepoCellView.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -368,6 +373,7 @@
 				DD00C668185DD04F002D25CB /* main.m in Sources */,
 				DD89A4D2186E099600543D8C /* AFHTTPRequestOperationManager.m in Sources */,
 				DD89A4D5186E099600543D8C /* AFSecurityPolicy.m in Sources */,
+				DDC89033187DBB810019676B /* ITRepoCellView.m in Sources */,
 				DD00C66F185DD04F002D25CB /* ITAppDelegate.m in Sources */,
 				DD00C695185DD297002D25CB /* ITMasterViewController.m in Sources */,
 				DD89A4D3186E099600543D8C /* AFHTTPSessionManager.m in Sources */,
