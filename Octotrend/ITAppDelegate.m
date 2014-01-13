@@ -52,7 +52,7 @@
             Repository *repo = [[Repository alloc] init];
             repo.name = [currentRepo objectForKey:@"name"];
             repo.url = [NSURL URLWithString:[currentRepo objectForKey:@"html_url"]];
-            repo.language = [currentRepo objectForKey:@"language"];
+            repo.language = [currentRepo objectForKey:@"language"] == [NSNull null] ? @"" : [currentRepo objectForKey:@"language"];
             repo.description = [currentRepo objectForKey:@"description"];
             repo.watchersCount = [currentRepo objectForKey:@"watchers_count"];
             [reposArray addObject:repo];
