@@ -117,26 +117,38 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>
-                <webView horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="6Ls-9M-yPQ">
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="lTd-UJ-mwd">
                     <rect key="frame" x="250" y="0.0" width="774" height="272"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <webView horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="6Ls-9M-yPQ">
+                            <rect key="frame" x="0.0" y="0.0" width="774" height="272"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                            <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                                <nil key="identifier"/>
+                            </webPreferences>
+                        </webView>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="width" constant="774" id="TQh-9i-Kpk"/>
+                        <constraint firstItem="6Ls-9M-yPQ" firstAttribute="leading" secondItem="lTd-UJ-mwd" secondAttribute="leading" id="CHI-uz-Oft"/>
+                        <constraint firstAttribute="bottom" secondItem="6Ls-9M-yPQ" secondAttribute="bottom" id="DJQ-Ml-owx"/>
+                        <constraint firstItem="6Ls-9M-yPQ" firstAttribute="top" secondItem="lTd-UJ-mwd" secondAttribute="top" id="oJf-5j-LOj"/>
+                        <constraint firstAttribute="trailing" secondItem="6Ls-9M-yPQ" secondAttribute="trailing" id="tFt-I9-W6U"/>
                     </constraints>
-                    <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
-                        <nil key="identifier"/>
-                    </webPreferences>
-                </webView>
+                </customView>
             </subviews>
             <constraints>
-                <constraint firstItem="6Ls-9M-yPQ" firstAttribute="leading" secondItem="Bzd-Nj-OZP" secondAttribute="trailing" id="0Yu-OC-EPM"/>
                 <constraint firstItem="Bzd-Nj-OZP" firstAttribute="top" secondItem="1" secondAttribute="top" id="6dA-c3-3f7"/>
                 <constraint firstItem="Bzd-Nj-OZP" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="IbE-Kk-bh5"/>
+                <constraint firstItem="lTd-UJ-mwd" firstAttribute="top" secondItem="Bzd-Nj-OZP" secondAttribute="top" id="IwQ-q0-Tj8"/>
+                <constraint firstItem="lTd-UJ-mwd" firstAttribute="top" secondItem="1" secondAttribute="top" id="QD1-g3-M2A"/>
                 <constraint firstAttribute="bottom" secondItem="Bzd-Nj-OZP" secondAttribute="bottom" id="QMn-h3-Oxc"/>
-                <constraint firstItem="6Ls-9M-yPQ" firstAttribute="top" secondItem="1" secondAttribute="top" id="ZTs-1E-cvo"/>
-                <constraint firstAttribute="trailing" secondItem="6Ls-9M-yPQ" secondAttribute="trailing" id="ah8-7z-Wbs"/>
-                <constraint firstItem="6Ls-9M-yPQ" firstAttribute="leading" secondItem="Bzd-Nj-OZP" secondAttribute="trailing" id="k6p-8f-ui2"/>
-                <constraint firstAttribute="bottom" secondItem="6Ls-9M-yPQ" secondAttribute="bottom" id="zhO-oC-4Vo"/>
+                <constraint firstAttribute="trailing" secondItem="lTd-UJ-mwd" secondAttribute="trailing" id="Ucf-bm-GZe"/>
+                <constraint firstItem="lTd-UJ-mwd" firstAttribute="leading" secondItem="Bzd-Nj-OZP" secondAttribute="trailing" id="bKi-xw-ogI"/>
+                <constraint firstAttribute="trailing" secondItem="lTd-UJ-mwd" secondAttribute="trailing" id="fBo-Os-mMN"/>
+                <constraint firstItem="lTd-UJ-mwd" firstAttribute="bottom" secondItem="Bzd-Nj-OZP" secondAttribute="bottom" id="hhW-Lg-ssp"/>
+                <constraint firstItem="lTd-UJ-mwd" firstAttribute="leading" secondItem="Bzd-Nj-OZP" secondAttribute="trailing" id="vtc-ks-fLm"/>
+                <constraint firstAttribute="bottom" secondItem="lTd-UJ-mwd" secondAttribute="bottom" id="x6l-nC-gmC"/>
             </constraints>
         </customView>
     </objects>

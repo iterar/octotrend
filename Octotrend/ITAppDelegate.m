@@ -61,6 +61,9 @@
         self.masterViewController.repositories = reposArray;
         [self.masterViewController.tableView reloadData];
         
+        // Select first repository
+        [self.masterViewController.tableView selectRowIndexes:[NSIndexSet indexSetWithIndex:0] byExtendingSelection:NO];
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
