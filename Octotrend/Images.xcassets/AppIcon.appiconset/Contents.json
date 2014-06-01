@@ -9,13 +9,13 @@
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "octotrend32-1.png",
+      "filename" : "octotrend32.png",
       "scale" : "2x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "octotrend32.png",
+      "filename" : "octotrend32-1.png",
       "scale" : "1x"
     },
     {
@@ -33,25 +33,25 @@
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "octotrend256-1.png",
+      "filename" : "octotrend256.png",
       "scale" : "2x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "octotrend256.png",
+      "filename" : "octotrend256-1.png",
       "scale" : "1x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "octotrend512-1.png",
+      "filename" : "octotrend512.png",
       "scale" : "2x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "octotrend512.png",
+      "filename" : "octotrend512-1.png",
       "scale" : "1x"
     },
     {
