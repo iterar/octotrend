@@ -11,7 +11,10 @@
 
 #import "ITRepoCellView.h"
 
-@interface ITMasterViewController ()
+#define kMinSplitViewWidth 250.0
+#define kMaxSplitViewWidth 700.0
+
+@interface ITMasterViewController () <NSSplitViewDelegate>
 
 @end
 
@@ -22,6 +25,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Initialization code here.
+        [self.tableView setAllowsColumnResizing:YES];
     }
     return self;
 }
@@ -56,6 +60,21 @@
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
     return [self.repositories count];
+}
+
+#pragma mark Split view delegate methods
+
+- (BOOL)splitView:(NSSplitView *)splitView shouldAdjustSizeOfSubview:(NSView *)view {
+    [self.tableView setNeedsDisplay];
+    return YES;
+}
+
+- (CGFloat)splitView:(NSSplitView *)splitView constrainMinCoordinate:(CGFloat)proposedMinimumPosition ofSubviewAt:(NSInteger)dividerIndex {
+    return kMinSplitViewWidth;
+}
+
+- (CGFloat)splitView:(NSSplitView *)splitView constrainMaxCoordinate:(CGFloat)proposedMaximumPosition ofSubviewAt:(NSInteger)dividerIndex {
+    return kMaxSplitViewWidth;
 }
 
 @end
