@@ -10,6 +10,7 @@
 #import "ITMasterViewController.h"
 #import "Repository.h"
 #import "AFNetworking.h"
+#import "INAppStoreWindow.h"
 
 @interface ITAppDelegate ()
 
@@ -25,6 +26,21 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    
+    INAppStoreWindow *aWindow = (INAppStoreWindow*)self.window;
+    aWindow.titleBarHeight = 60.0;
+    aWindow.showsBaselineSeparator = NO;
+    NSColor *titleBarColor = [NSColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0];
+    aWindow.titleBarStartColor = titleBarColor;
+    aWindow.titleBarEndColor = titleBarColor;
+    NSImage *image = [NSImage imageNamed:@"title_bar_logo.png"];
+    NSSize imageSize = NSMakeSize(40.f, 40.f);
+    NSRect imageViewRect = NSMakeRect(NSMidX(aWindow.titleBarView.bounds) - (imageSize.width / 2.f), NSMidY(aWindow.titleBarView.bounds) - (imageSize.height / 2.f), imageSize.width, imageSize.height);
+    NSImageView *imageView = [[NSImageView alloc] initWithFrame:imageViewRect];
+    imageView.image = image;
+    [imageView setAutoresizingMask:NSViewWidthSizable];
+    [aWindow.titleBarView addSubview:imageView];
+    
     // Insert code here to initialize your application
     self.masterViewController = [[ITMasterViewController alloc] initWithNibName:@"ITMasterViewController" bundle:nil];
     
@@ -68,8 +84,8 @@
         NSLog(@"Error: %@", error);
     }];
     
-    [self.window.contentView addSubview:self.masterViewController.view];
-    self.masterViewController.view.autoresizingMask = NSViewHeightSizable;
+    [self.window setContentView:self.masterViewController.view];
+    self.masterViewController.view.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
     self.masterViewController.view.frame = ((NSView*)self.window.contentView).bounds;
     
 }

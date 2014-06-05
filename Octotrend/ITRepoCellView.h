@@ -8,7 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ITRepoCellView : NSTableCellView
+@interface ITRepoCellView : NSTableRowView {
+    NSColor *color;
+}
+
+@property (nonatomic) NSInteger rowIndex;
 
 @property (nonatomic, strong) IBOutlet NSTextField *nameLabel;
 @property (nonatomic, strong) IBOutlet NSTextField *descriptionLabel;

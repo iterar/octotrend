@@ -26,28 +26,32 @@
     if (self) {
         // Initialization code here.
         [self.tableView setAllowsColumnResizing:YES];
+        NSSplitView *splitView = (NSSplitView*)self.view;
+        [splitView setDividerStyle:NSSplitViewDividerStyleThin];
+        NSLog(@"Superview: %@", self.tableView.superview.superview.className);
+        NSScrollView* scrollView = (NSScrollView*)self.tableView.superview.superview;
+        scrollView.borderType = NSNoBorder;
     }
     return self;
 }
 
 -(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row {
-    return 70;
+    return 112;
 }
 
-- (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    
-    // Get a new ViewCell
-    ITRepoCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
-    
-    if( [tableColumn.identifier isEqualToString:@"RepoColumn"] )
-    {
+- (NSTableRowView *)tableView:(NSTableView *)tableView rowViewForRow:(NSInteger)row {
+    static NSString* const kRowIdentifier = @"RowView";
+    ITRepoCellView *cellView = [tableView makeViewWithIdentifier:kRowIdentifier owner:self];
+    [cellView setRowIndex:row];
+//    if (!cellView) {
         Repository *repo = [self.repositories objectAtIndex:row];
         cellView.nameLabel.stringValue = repo.name;
         cellView.descriptionLabel.stringValue = repo.description;
         cellView.languageLabel.stringValue = repo.language;
         cellView.watchersCountLabel.stringValue = [NSString stringWithFormat:@"Watchers: %@", [repo.watchersCount stringValue]];
         return cellView;
-    }
+//    }
+    
     return cellView;
 }
 

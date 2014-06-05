@@ -15,11 +15,14 @@ PODS:
   - AFNetworking/Reachability (2.2.4)
   - AFNetworking/Security (2.2.4)
   - AFNetworking/Serialization (2.2.4)
+  - INAppStoreWindow (1.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.2)
+  - INAppStoreWindow
 
 SPEC CHECKSUMS:
   AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  INAppStoreWindow: 570e4a9768aaac643ef2129d9b018aca2e0157b3
 
 COCOAPODS: 0.33.1

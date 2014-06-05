@@ -9,9 +9,43 @@
 	<key>commit</key>
 	<string>421b5ab1617d3a0def25bf53ababb8a7c8aabc34</string>
 	<key>fonts</key>
-	<array/>
+	<array>
+		<string>LucidaGrande</string>
+		<string>LucidaGrande</string>
+		<string>HelveticaNeue-LightItalic</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>LucidaGrande</string>
+		<string>LucidaGrande</string>
+		<string>HelveticaNeue-LightItalic</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>LucidaGrande</string>
+		<string>Helvetica</string>
+		<string>HelveticaNeue-LightItalic</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>LucidaGrande</string>
+		<string>LucidaGrande</string>
+		<string>HelveticaNeue-LightItalic</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>LucidaGrande</string>
+		<string>LucidaGrande</string>
+		<string>HelveticaNeue-LightItalic</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>LucidaGrande</string>
+		<string>Helvetica</string>
+		<string>HelveticaNeue-LightItalic</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>LucidaGrande</string>
+		<string>Helvetica</string>
+		<string>HelveticaNeue-LightItalic</string>
+	</array>
 	<key>length</key>
-	<integer>284278</integer>
+	<integer>573739</integer>
 	<key>version</key>
 	<integer>36</integer>
 </dict>
