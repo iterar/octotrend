@@ -1,28 +1,33 @@
 PODS:
-  - AFNetworking (2.2.4):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
+  - AFNetworking (2.5.0):
+    - AFNetworking/NSURLConnection (= 2.5.0)
+    - AFNetworking/NSURLSession (= 2.5.0)
+    - AFNetworking/Reachability (= 2.5.0)
+    - AFNetworking/Security (= 2.5.0)
+    - AFNetworking/Serialization (= 2.5.0)
+    - AFNetworking/UIKit (= 2.5.0)
+  - AFNetworking/NSURLConnection (2.5.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-    - AFNetworking/UIKit
-  - AFNetworking/NSURLConnection (2.2.4):
+  - AFNetworking/NSURLSession (2.5.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.2.4):
-    - AFNetworking/NSURLConnection
-  - AFNetworking/Reachability (2.2.4)
-  - AFNetworking/Security (2.2.4)
-  - AFNetworking/Serialization (2.2.4)
+  - AFNetworking/Reachability (2.5.0)
+  - AFNetworking/Security (2.5.0)
+  - AFNetworking/Serialization (2.5.0)
+  - BSRefreshableScrollView (1.0.1)
   - INAppStoreWindow (1.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.2)
+  - BSRefreshableScrollView (~> 1.0)
   - INAppStoreWindow
 
 SPEC CHECKSUMS:
-  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  BSRefreshableScrollView: 50826ef2eaee96a677d7a11596328f85b729f66f
   INAppStoreWindow: 570e4a9768aaac643ef2129d9b018aca2e0157b3
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.35.0

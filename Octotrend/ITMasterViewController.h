@@ -8,11 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
+#import "BSRefreshableScrollView.h"
 
 @interface ITMasterViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *repositories;
 
+@property (nonatomic, strong) IBOutlet BSRefreshableScrollView *scrollView;
 @property (nonatomic, strong) IBOutlet NSTableView *tableView;
 @property (nonatomic, strong) IBOutlet WebView *webview;
 

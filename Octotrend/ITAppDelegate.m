@@ -38,51 +38,11 @@
     NSRect imageViewRect = NSMakeRect(NSMidX(aWindow.titleBarView.bounds) - (imageSize.width / 2.f), NSMidY(aWindow.titleBarView.bounds) - (imageSize.height / 2.f), imageSize.width, imageSize.height);
     NSImageView *imageView = [[NSImageView alloc] initWithFrame:imageViewRect];
     imageView.image = image;
-    [imageView setAutoresizingMask:NSViewWidthSizable];
+    [imageView setAutoresizingMask:NSViewMinXMargin | NSViewMaxXMargin | NSViewMinYMargin | NSViewMaxYMargin];
     [aWindow.titleBarView addSubview:imageView];
     
     // Insert code here to initialize your application
     self.masterViewController = [[ITMasterViewController alloc] initWithNibName:@"ITMasterViewController" bundle:nil];
-    
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    
-    // Get date from one week ago
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDate *today = [NSDate date];
-    NSDateComponents *oneWeekAgoComponents = [[NSDateComponents alloc] init];
-    [oneWeekAgoComponents setWeek:-1];
-    NSDate *twoWeeksAgo = [calendar dateByAddingComponents:oneWeekAgoComponents toDate:today options:0];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd"];
-    NSString *stringFromDate = [formatter stringFromDate:twoWeeksAgo];
-    
-    NSString *query = [NSString stringWithFormat:@"created:>%@", stringFromDate];
-    NSDictionary *parameters = @{@"q": query};
-    [manager GET:@"https://api.github.com/search/repositories" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
-        
-        NSArray *repos = [responseObject objectForKey:@"items"];
-        NSMutableArray *reposArray = [[NSMutableArray alloc] initWithCapacity:repos.count];
-        
-        for (NSDictionary *currentRepo in repos) {
-            Repository *repo = [[Repository alloc] init];
-            repo.name = [currentRepo objectForKey:@"name"];
-            repo.url = [NSURL URLWithString:[currentRepo objectForKey:@"html_url"]];
-            repo.language = [currentRepo objectForKey:@"language"] == [NSNull null] ? @"" : [currentRepo objectForKey:@"language"];
-            repo.description = [currentRepo objectForKey:@"description"];
-            repo.watchersCount = [currentRepo objectForKey:@"watchers_count"];
-            [reposArray addObject:repo];
-        }
-        
-        self.masterViewController.repositories = reposArray;
-        [self.masterViewController.tableView reloadData];
-        
-        // Select first repository
-        [self.masterViewController.tableView selectRowIndexes:[NSIndexSet indexSetWithIndex:0] byExtendingSelection:NO];
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
-    }];
     
     [self.window setContentView:self.masterViewController.view];
     self.masterViewController.view.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;

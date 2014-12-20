@@ -11,7 +11,7 @@
 @interface Repository : NSObject
 
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *description;
+@property (nonatomic, strong) NSString *repo_description;
 @property (nonatomic, strong) NSURL *url;
 @property (nonatomic, strong) NSString *language;
 @property (nonatomic, strong) NSNumber *watchersCount;
